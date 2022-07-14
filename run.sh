@@ -1,11 +1,12 @@
 #!/bin/bash
 wget "https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2019.bak"
-main
+
 run-docker() {
 docker build -t advan:1 .
 }
+
 main() {
-  read -p "Építsük az image-et?" func
+  read -p "Építsük az image-et?(i/n)" func
   if [[ $func == "i" ]]
   then
   run-docker
@@ -13,3 +14,4 @@ main() {
   exit
   fi
 }
+main
