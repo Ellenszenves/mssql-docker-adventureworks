@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 wget "https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2019.bak"
 main
 run-docker() {
