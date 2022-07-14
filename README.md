@@ -1,2 +1,2 @@
 # mssql-docker-adventureworks
-Starting a new container with the adventureworks database from the start
+Starting a new MSSQL container with the Adventureworks database in it.
