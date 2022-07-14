@@ -11,6 +11,7 @@ main
 
 run-docker() {
 docker build -t advan:1 .
+docker run --name adv -d -p 1433:1433 advan:1
 }
 
 main() {
